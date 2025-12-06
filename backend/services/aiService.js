@@ -8,7 +8,7 @@ dotenv.config();
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 const OPENROUTER_MODEL =
   process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini"; // or any model from OpenRouter
-const SITE_URL = process.env.SITE_URL || "http://localhost:5173"; // your app URL
+const SITE_URL = process.env.SITE_URL || "https://startup-idea-validator-seven.vercel.app"; // your app URL
 const APP_NAME = "AI Startup Idea Validator"; // will show in OpenRouter logs
 
 if (!OPENROUTER_API_KEY) {
