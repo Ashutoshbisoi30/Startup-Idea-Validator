@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "https://startup-idea-validator-backend.onrender.com",
+    origin: ["https://startup-idea-validator-backend.onrender.com",
+    "http://localhost:5173"],
     methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
